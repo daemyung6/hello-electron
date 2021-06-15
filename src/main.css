@@ -1,0 +1,52 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    overflow: hidden;
+}
+* {
+    transition: all 500ms;
+}
+@font-face {
+    font-family: Arita-B;
+    src: url("./font/Arita4.0_B.otf");
+}
+@font-face {
+    font-family: Arita-L;
+    src: url("./font/Arita4.0_L.otf");
+}
+@font-face {
+    font-family: Arita-M;
+    src: url("./font/Arita4.0_M.otf");
+}
+@font-face {
+    font-family: Arita-SB;
+    src: url("./font/Arita4.0_SB.otf");
+}
+@font-face {
+    font-family: Arita-T;
+    src: url("./font/Arita4.0_T.otf");
+}
+#pages {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.page {
+    width: 1920px;
+    height: 1080px;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.select-page {
+    opacity: 1;
+    z-index: 1;
+}

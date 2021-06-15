@@ -1,0 +1,28 @@
+{
+  "name": "hello-electron",
+  "version": "0.0.1",
+  "description": "hello-electron",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development electron index.js",
+    "startp": "cross-env NODE_ENV=production electron index.js",
+    "pack": "build --dir",
+    "dist": "electron-builder --publish never",
+    "publish": "electron-builder --publish onTag"
+  },
+  "author": "hond daemyung",
+  "license": "MIT",
+  "build": {
+    "appId": "hello-electron",
+    "asar": false,
+    "nsis": {
+      "oneClick": true,
+      "include": "./installer.nsh"
+    }
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^13.1.0",
+    "electron-builder": "^22.10.5"
+  }
+}
